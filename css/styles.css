@@ -1,0 +1,186 @@
+.botonCompra {
+    border-color: #ED6436;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: white;
+    height: 40px;
+    ;
+}
+
+.botonCompra:hover {
+    background-color: #ED6436;
+    color: white;
+}
+
+.botonVistaCompleta {
+    border-color: #ED6436;
+    background-color: #ED6436;
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 40px;
+}
+
+.botonVistaCompleta:hover {
+    background-color: white;
+    color: black;
+}
+
+.botonBarras {
+    font-size: 200%;
+    color: grey;
+    display: none;
+}
+
+.logo {
+    margin-left: 5%;
+}
+
+.listaNavegador li:hover a{
+  color: #ED6436 !important;
+  border-bottom: solid 3px #ED6436;
+}
+
+/***********************************************************Contenido*******************************************************/
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+main {
+    width: 95%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.mainContainer {
+    max-width: 100%;
+    ;
+}
+
+.petActivities {
+    color: #ED6436;
+    font-size: 25px;
+    ;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 1000;
+}
+
+main>* h2 {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+article>.imagenArticulo {
+    height: 350px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+article {
+    position: relative;
+}
+
+article .tituloImagen {
+position: absolute;
+    bottom: 129px;
+    right: 0;
+    color: white;
+    text-align: center;
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+article .tituloImagen h3{
+font-weight: 800;
+}
+article:hover .shade {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+}
+
+article:hover .tituloImagen{
+  display: block;
+}
+
+@media only screen and (max-width: 576px) {
+    .contraer>.col {
+        break-after: always;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        align-self: center;
+        text-align: center;
+    }
+    .petActivities {
+        text-align: center;
+    }
+    .contraer h2 {
+        margin: 0;
+        text-align: center;
+
+    }
+    .contraer div {
+        justify-content: center !important;
+        align-items: center;
+    }
+    .contenedorArticulos {
+        justify-content: center !important;
+    }
+    .contenedorArticulos article {
+        margin-top: 25px;
+        ;
+    }
+    .contenedorArticulos article:last-child {
+        margin-bottom: 20px;
+        ;
+    }
+    article>.imagenArticulo {
+        height: 350px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 30px;
+        ;
+    }
+    .botonBarras {
+        display: flex;
+    }
+    .listaNavegador {
+        display: none !important;
+    }
+
+    article .shade {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+}
+
+  article .tituloImagen{
+    display: block;
+}
+
+article .tituloImagen {
+position: absolute;
+    right: 0;
+    color: white;
+    text-align: center;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+}
